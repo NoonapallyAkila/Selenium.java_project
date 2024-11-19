@@ -2,27 +2,32 @@ package Step_Def;
 
 public class Practicepagedef {
 
-   public void lndicon() {
-        
-        System.out.println("User is on the master page");
+   
+   @Given("the user clicks practice menu item")
+   public void practicemenu(){
+
+       System.out.println("navigated to practice management");
     }
 
-    @When("the user enters the name {string} and value{string}")
+    @When("successfully added practice")
     public void addpracticepopup(String name , String value ,String manageemail , String groupemai) {
        
         System.out.println("practice added successfully");
     }
 
-    @When("clicks on the edit practice")
+    @When("successfully edited practice")
     public void editpracticepopup(String email1) 
         System.out.println("practice edited successfully");
     }
 
-    @when("the user should be redirected to the homepage")
+    @when("successfully deleted practice")
     public void deletepracticepopup() {
       System.out.println("practice deleted successfully");
        
        
     }
-
+    @Then("user should be on practice page")
+       public void practicemenu(){
+    System.out.println("user should be practice management");
+       
 }
