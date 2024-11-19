@@ -15,7 +15,7 @@ public class Skillsetpagedef {
     }
 
     @When("successfully edited skillset")
-    public void editpracticepopup(String email1) 
+    public void editpracticepopup(String skill) 
         System.out.println("skillset edited successfully");
     }
 
