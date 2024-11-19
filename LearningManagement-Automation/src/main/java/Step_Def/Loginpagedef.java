@@ -1,7 +1,8 @@
 package Step_Def;
 
 public class Loginpagedef {
-	
+
+	  @Given("the user is on the login page")
 	 public void theUserIsOnTheLoginPage() {
         // Code to navigate to the login page, e.g., using Selenium WebDriver
         System.out.println("User is on the login page");
