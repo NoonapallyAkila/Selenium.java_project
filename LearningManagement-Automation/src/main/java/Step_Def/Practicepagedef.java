@@ -2,28 +2,27 @@ package Step_Def;
 
 public class Practicepagedef {
 
-   public void theUserIsOnTheLoginPage() {
-        // Code to navigate to the login page, e.g., using Selenium WebDriver
-        System.out.println("User is on the login page");
+   public void lndicon() {
+        
+        System.out.println("User is on the master page");
     }
 
-    @When("the user enters the username {string} and password {string}")
-    public void theUserEntersUsernameAndPassword(String username, String password) {
-        // Code to enter username and password
-        System.out.println("Entered username: " + username + " and password: " + password);
+    @When("the user enters the name {string} and value{string}")
+    public void addpracticepopup(String name , String value ,String manageemail , String groupemai) {
+       
+        System.out.println("practice added successfully");
     }
 
-    @When("clicks the login button")
-    public void clicksTheLoginButton() {
-        // Code to click the login button
-        System.out.println("Clicked on login button");
+    @When("clicks on the edit practice")
+    public void editpracticepopup(String email1) 
+        System.out.println("practice edited successfully");
     }
 
-    @Then("the user should be redirected to the homepage")
-    public void theUserShouldBeRedirectedToTheHomepage() {
-        // Code to verify redirection to homepage
-        boolean isHomePage = true;  // This should be determined by your code
-        Assert.assertTrue("User is not on the homepage", isHomePage);
+    @when("the user should be redirected to the homepage")
+    public void deletepracticepopup() {
+      System.out.println("practice deleted successfully");
+       
+       
     }
 
 }
